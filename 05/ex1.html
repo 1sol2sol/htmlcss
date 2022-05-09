@@ -74,6 +74,40 @@
         transform: scale(1.05);
         transition: all 1s;
       }
+
+      .list-box {
+        width: 365px;
+        height: 365px;
+        margin: auto;
+        position: relative;
+        overflow: hidden;
+      }
+      .list-box .list .txt-box {
+        width: 365px;
+        height: 365px;
+        background-color: rgba(0, 0, 0, 0.65);
+        color: #fff;
+        font-size: 12px;
+        padding: 20px;
+        box-sizing: border-box;
+        text-align: center;
+        position: absolute;
+        left: 0;
+        top: 285px;
+      }
+      .txt-box h3 {
+        height: 60px;
+        line-height: 60px;
+        font-size: 14px;
+      }
+      .txt-box span:nth-of-type(2) {
+        display: block;
+        margin: 20px 0;
+      }
+      .list-box:hover .list .txt-box {
+        top: 0;
+        transition: top 0.45s;
+      }
     </style>
   </head>
   <body>
