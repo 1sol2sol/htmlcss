@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #userId {
+        width: 150px;
+        height: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <form name="frm1">
+      <fieldset>
+        <legend>회원가입정보</legend>
+        <ul>
+          <li>
+            <label for="userId">아이디</label>
+            <input
+              type="text"
+              id="userId"
+              name=""
+              placeholder="아이디는 이메일 형식입니다."
+              maxlength="20"
+            />
+          </li>
+          <li>
+            <label for="userPw">비밀번호</label>
+            <input type="password" id="userPw" maxlength="8" />
+          </li>
+          <li>
+            <input type="file" />
+          </li>
+          <li>
+            <label for="userMail">이메일</label>
+            <input type="email" />
+            <!--자동으로 유효성 검사가 된다.-->
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>신청과목</legend>
+        <input type="radio" name="subject" id="math" value="math" /><label
+          for="math"
+          >수학</label
+        >
+        <input type="radio" name="subject" id="eng" value="eng" /><label
+          for="eng"
+          >영어</label
+        >
+        <input type="radio" name="subject" id="kor" value="kor" /><label
+          for="kor"
+          >국어</label
+        >
+      </fieldset>
+
+      <fieldset>
+        <legend>관심분야</legend>
+        <input type="checkbox" id="movie" value="movie" /><label for="movie"
+          >영화</label
+        >
+        <input type="checkbox" id="music" value="music" /><label for="music"
+          >음악</label
+        >
+        <input type="checkbox" id="read" value="read" /><label for="read"
+          >독서</label
+        >
+        <input type="checkbox" id="game" value="game" checked /><label
+          for="game"
+          >게임</label
+        >
+      </fieldset>
+    </form>
+  </body>
+</html>
