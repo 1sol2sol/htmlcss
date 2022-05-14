@@ -13,7 +13,7 @@
     </style>
   </head>
   <body>
-    <form name="frm1">
+    <form name="frm1" action="">
       <fieldset>
         <legend>회원가입정보</legend>
         <ul>
@@ -36,8 +36,13 @@
           </li>
           <li>
             <label for="userMail">이메일</label>
-            <input type="email" />
+            <input type="email" id="userMail" required />
             <!--자동으로 유효성 검사가 된다.-->
+            <input
+              type="text"
+              readonly
+              placeholder="이메일 형식에 맞게 작성하세요."
+            />
           </li>
         </ul>
       </fieldset>
@@ -73,6 +78,35 @@
           >게임</label
         >
       </fieldset>
+      <fieldset>
+        <legend>선택</legend>
+        <label for="sel1">수량 선택</label>
+        <select name="" id="sel1">
+          <option value="10">10개</option>
+          <option value="20">20개</option>
+          <option value="30">30개</option>
+          <option value="40">40개</option>
+          <option value="50">50개</option>
+        </select>
+        <select>
+          <optgroup label="이과">
+            <option value="math">수학</option>
+            <option value="sien">과학</option>
+            <option value="bio">생물</option>
+          </optgroup>
+          <optgroup label="문과">
+            <option value="ko">국어</option>
+            <option value="eng">영어</option>
+            <option value="text">논술</option>
+          </optgroup>
+        </select>
+      </fieldset>
+      <input type="submit" value="제출하기" />
+      <input type="reset" value="취소하기" />
+      <input type="button" value="버튼" />
+      <button>클릭</button>
+      <!-- button의 default는 submit 이다. -->
+      <textarea name="" id="" cols="50" rows="3"></textarea>
     </form>
   </body>
 </html>
