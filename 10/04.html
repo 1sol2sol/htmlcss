@@ -50,11 +50,24 @@
             background-color: #666;
             margin-top: 50px;
         }
-
         .wrap4>div{width: 300px;}
         .wrap4>div:nth-child(1){background-color: red; flex-shrink: 2;} /*2ㄴ배율 만큼 축소*/
         .wrap4>div:nth-child(2){background-color: green; flex-shrink: 2;}
         .wrap4>div:nth-child(3){background-color: blue; flex-shrink: 0;} 
+
+        .wrap5{
+            display: flex;
+            width: 600px;
+            height: 40px;
+            background-color: #666;
+            margin-top: 50px;
+        }
+        .wrap5>div{flex-basis: 300px;}
+        /*flex-basis: auto; width 값 지정안하면 컨텐츠의 크기만큼 들어간다.   */
+        .wrap5>div:nth-child(1){background-color: red; } 
+        .wrap5>div:nth-child(2){background-color: green; }
+        .wrap5>div:nth-child(3){background-color: blue;} 
+
     </style>
 </head>
 <body>
@@ -80,5 +93,9 @@
         <div class="box"></div> <!-- 300 - {(100/4)*2} = 250-->
         <div class="box"></div> <!-- 300 - {(100/4)*0} = 300-->
     </div>
+    <div class="wrap5"> 
+        <div class="box">박스</div> 
+        <div class="box">박스 박스</div> 
+        <div class="box">박스</div> 
 </body>
 </html>
