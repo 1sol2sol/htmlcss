@@ -63,7 +63,8 @@
             margin-top: 50px;
         }
         .wrap5>div{flex-basis: 300px;}
-        /*flex-basis: auto; width 값 지정안하면 컨텐츠의 크기만큼 들어간다.   */
+        /*flex-basis: auto; width 값 지정안하면 컨텐츠의 크기만큼 들어간다.   
+          flex-basis: 300px; 이어도 부모 박스의 넓이가 600px 이고 자동으로 shrink 되어 하나의 박스당 200px씩 받게된다*/
         .wrap5>div:nth-child(1){background-color: red; } 
         .wrap5>div:nth-child(2){background-color: green; }
         .wrap5>div:nth-child(3){background-color: blue;} 
