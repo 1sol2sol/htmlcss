@@ -19,11 +19,18 @@
       }
       .container1 {
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: stretch;
       }
       .container2 {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        flex-wrap: wrap;
+        /* flex-flow: column wrap */
+      }
+      .container2 > div {
+        flex: 0 0 100px;
       }
       .box1 {
         background-color: red;
@@ -33,6 +40,12 @@
       }
       .box3 {
         background-color: green;
+      }
+      .box4 {
+        background-color: blue;
+      }
+      .box5 {
+        background-color: violet;
       }
     </style>
   </head>
@@ -46,6 +59,8 @@
       <div class="box1 box">박스1</div>
       <div class="box2 box">박스2</div>
       <div class="box3 box">박스3</div>
+      <div class="box4 box">박스4</div>
+      <div class="box5 box">박스5</div>
     </div>
   </body>
 </html>
