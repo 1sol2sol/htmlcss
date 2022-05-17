@@ -189,7 +189,7 @@ footer .seller-service-btn:hover + .seller-service-list-box {
   display: block; /*형제 요소 선택자이므로 +를 사용하여야 한다. */
 }
 footer .company-info {
-  border-bottom: 1px solid #d0d0d0;
+  overflow: hidden;
   padding: 13px 0 19px;
   box-sizing: border-box;
 }
@@ -200,11 +200,14 @@ footer .info {
 }
 
 footer .customer {
-  float: right;
+  float: left;
+  width: 580px;
 }
 
 footer .company-info .content-box {
   margin-top: 5px;
+  font-size: 13px;
+  letter-spacing: -0.5px;
   line-height: 23px;
   font-size: 13px;
   color: #757c8a;
@@ -219,4 +222,95 @@ footer .company-info .inner .title {
   font-weight: bold;
   letter-spacing: -1px;
   color: #5e636d;
+}
+
+footer .title.link_company-title::after {
+  content: "";
+  width: 16px;
+  height: 16px;
+  margin-left: 4px;
+  margin-top: -3px;
+  background: url(../img/sprite__common.png) no-repeat -358px -112px / 400px
+    auto;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+footer .company-info .content-box .text_emphasis {
+  color: #2e8de5;
+}
+
+footer .legal-info {
+  padding: 9px 0 18px;
+  border-top: 1px solid #ececec;
+}
+
+footer .legal-info .list__legal-info{
+  overflow: hidden;
+  width: 850px;
+  font-size: 0;
+}
+footer .legal-info .list__legal-info >li {
+  display: inline-block;
+  margin-right: 30px;
+  padding-top: 7px;
+  font-size: 13px;
+  line-height: 20px;
+  color: #94989f;
+}
+
+footer .legal-info .button__legal-info{
+  border: none;
+  background-color: #fff;
+}
+
+footer .legal-info .button__legal-info,
+footer .legal-info .link__legal-info,
+footer .legal-info .link__mail {
+  font-size: 13px;
+  line-height: 20px;
+  color: #94989f;
+}
+
+footer .legal-info .button__legal-info::after,
+footer .legal-info .link__legal-info::after {
+  background-position: -238px -34px;
+  display: inline-block;
+}
+
+footer .sprite__common::after {
+  content: "";
+  margin-left: 5px;
+  background: url(../img/sprite__common.png) no-repeat;
+  background-size: 400px auto;
+  width: 5px;
+  height: 10px;
+}
+
+footer .footer-notice {
+  padding: 16px 0 85px;
+  border-top: 1px solid #ececec;
+}
+
+footer .footer-notice .text__notice {
+  font-size: 12px;
+  line-height: 20px;
+  color: #94989f;
+}
+
+footer .footer-notice .text__notice .button__notice {
+  margin-left: 8px;
+  margin-top: -1px;
+  font-size: 12px;
+  line-height: 20px;
+  color: #94989f;
+  border: 0;
+  text-decoration: underline;
+  background-color: #fff;
+  cursor: pointer;
+}
+footer .footer-notice .text__copyright {
+  font-size: 12px;
+  line-height: 20px;
+  color: #94989f;
 }
