@@ -59,21 +59,25 @@
 /* 베스트 */
 .product-best-area {
   background-color: #465a4f;
-  height: 655px;
-  box-sizing: border-box;
+  padding-top: 100px;
+  padding-bottom: 80px;
 }
 .product-best h3 {
   font-size: 40px;
   color: #fffffa;
-  font-weight: bold;
+  font-weight: 700;
   font-family: "Philosopher", serif;
-  padding-top: 130px;
-  margin-bottom: 59px;
+  height: 40px;
+  line-height: 40px;
   text-align: center;
+  margin-bottom: 60px;
 }
+
 .product-best-area .inner > ul > li {
   float: left;
   margin-right: 27px;
+  text-align: center;
+  color: #fffef2;
 }
 .product-best-area .inner > ul > li .product-title {
   font-size: 18px;
@@ -91,7 +95,40 @@
 }
 .product-best-area .inner > ul > li .point {
   text-align: center;
-  padding-bottom: 135px;
+  
+}
+/* product-differenrt */
+.product-different {
+  padding: 80px 0;
+}
+
+.product-different h3 {
+  color: #464646;
+  font-size: 30px;
+  font-family: "Philosopher", serif;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 62px;
+}
+
+.product-different .different-list {
+  width: 1256px;
+  margin: auto;
+}
+
+.product-different .different-list > li {
+  float: left;
+  margin: 0 43px;
+  width: 228px;
+}
+
+.product-different .different-list .different__textbox {
+  font-size: 16px;
+  color: #666;
+  line-height: 28px;
+  padding-top: 55px;
+  text-align: center;
+  letter-spacing: -1px;
 }
 /* 스토어 */
 .store {
@@ -180,4 +217,45 @@
 }
 .store .store-right .slide-next-btn {
   background: url("../img/main/next-arrow.png") no-repeat;
+}
+
+/* sns */
+.sns {
+  padding-top: 190px;
+  padding-bottom: 100px;
+}
+
+.sns h3 {
+  color: #464646;
+  font-size: 53px;
+  font-weight: 700;
+  font-family: "Philosopher", serif;
+  margin-bottom: 64px;
+  text-align: center;
+}
+
+.sns .sns-list-instagram {
+  width: 1232px;
+  margin: auto;
+}
+
+.sns .sns-list-instagram > li {
+  float: left;
+  margin: 0 14px;
+  width: 280px;
+  text-align: center;
+}
+
+.sns .sns-list-instagram .sns-textbox {
+  margin-top: 37px;
+  font-size: 24px;
+  color: #333;
+}
+
+/* comment */
+.comment {
+  padding-top: 200px;
+  padding-bottom: 184px;
+  background: #85918a;
+  text-align: center;
 }
