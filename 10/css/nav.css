@@ -12,9 +12,11 @@
 
 .tab-bar-tab{
     color: #c0c0c0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .tab-bar-tab i{
-    display: block;
     margin-bottom: 5px;
     font-size: 24px;
     text-align: center;
